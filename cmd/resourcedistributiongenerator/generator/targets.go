@@ -22,7 +22,6 @@ import (
 	"strings"
 
 	"github.com/go-errors/errors"
-	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"sigs.k8s.io/kustomize/kyaml/yaml"
 )
 
@@ -106,7 +105,7 @@ func setAllNs(rn *yaml.RNode, allNs bool) error {
 	return nil
 }
 
-func setNsLabelSelector(rn *yaml.RNode, sel *metav1.LabelSelector) error {
+func setNsLabelSelector(rn *yaml.RNode, sel *LabelSelector) error {
 	if sel == nil {
 		return nil
 	}
@@ -137,7 +136,7 @@ func setMatchLabels(rn *yaml.RNode, matchLabels map[string]string) error {
 	return nil
 }
 
-func setMatchExpressions(rn *yaml.RNode, args []metav1.LabelSelectorRequirement) error {
+func setMatchExpressions(rn *yaml.RNode, args []LabelSelectorRequirement) error {
 	if args == nil {
 		return nil
 	}
@@ -161,18 +160,18 @@ func setMatchExpressions(rn *yaml.RNode, args []metav1.LabelSelectorRequirement)
 		matchExpElement.Content = append(matchExpElement.Content, newNode(keyField), newNode(matchExpArgs.Key))
 
 		// add operator for matchExpression
-		if matchExpArgs.Operator != metav1.LabelSelectorOpIn &&
-			matchExpArgs.Operator != metav1.LabelSelectorOpNotIn &&
-			matchExpArgs.Operator != metav1.LabelSelectorOpExists &&
-			matchExpArgs.Operator != metav1.LabelSelectorOpDoesNotExist {
+		if matchExpArgs.Operator != LabelSelectorOpIn &&
+			matchExpArgs.Operator != LabelSelectorOpNotIn &&
+			matchExpArgs.Operator != LabelSelectorOpExists &&
+			matchExpArgs.Operator != LabelSelectorOpDoesNotExist {
 			return errors.Errorf("the field " +
 				"ResourceDistribution.targets.namespaceLabelSelector.matchExpressions.operator is invalid")
 		}
 		operator := string(matchExpArgs.Operator)
 		matchExpElement.Content = append(matchExpElement.Content, newNode(operatorField), newNode(operator))
 
-		if matchExpArgs.Operator == metav1.LabelSelectorOpIn ||
-			matchExpArgs.Operator == metav1.LabelSelectorOpNotIn {
+		if matchExpArgs.Operator == LabelSelectorOpIn ||
+			matchExpArgs.Operator == LabelSelectorOpNotIn {
 			// add values for matchExpression
 			if matchExpArgs.Values == nil {
 				return errors.Errorf("the field " +
