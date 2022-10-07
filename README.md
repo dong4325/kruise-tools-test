@@ -1,7 +1,7 @@
 # Kruise-tools
 kubectl plugin for OpenKruise
 
-[Kruise-tools](https://github.com/openkruise/kruise-tools) provides commandline tools for kruise features, such as `kubectl-kruise`, which is a standard plugin of `kubectl`.
+[Kruise-tools](https://github.com/dong4325/kruise-tools-test) provides commandline tools for kruise features, such as `kubectl-kruise`, which is a standard plugin of `kubectl`.
 
 ## Install
 ### Install via Krew
@@ -19,7 +19,7 @@ $ kubectl-kruise --help
 $ kubectl kruise --help
 ```
 ### Install manually
-1. You can simply download the binary from the [releases](https://github.com/openkruise/kruise-tools/releases) page. Currently `linux`, `darwin`(OS X), `windows` with `x86_64` and `arm64` are provided. If you are using some other systems or architectures, you have to download the source code and execute `make build` to build the binary.
+1. You can simply download the binary from the [releases](https://github.com/dong4325/kruise-tools-test/releases) page. Currently `linux`, `darwin`(OS X), `windows` with `x86_64` and `arm64` are provided. If you are using some other systems or architectures, you have to download the source code and execute `make build` to build the binary.
 
 2. Extract and move it to system PATH.
 

@@ -23,10 +23,10 @@ import (
 	"fmt"
 	"sort"
 
+	internalapps "github.com/dong4325/kruise-tools-test/pkg/internal/apps"
 	kruiseappsv1alpha1 "github.com/openkruise/kruise-api/apps/v1alpha1"
 	kruiseappsv1beta1 "github.com/openkruise/kruise-api/apps/v1beta1"
 	kruiseclientsets "github.com/openkruise/kruise-api/client/clientset/versioned"
-	internalapps "github.com/openkruise/kruise-tools/pkg/internal/apps"
 
 	appsv1 "k8s.io/api/apps/v1"
 	corev1 "k8s.io/api/core/v1"

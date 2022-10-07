@@ -16,7 +16,7 @@ limitations under the License.
 
 package creation
 
-import "github.com/openkruise/kruise-tools/pkg/api"
+import "github.com/dong4325/kruise-tools-test/pkg/api"
 
 type Control interface {
 	Create(src api.ResourceRef, dst api.ResourceRef, opts Options) error

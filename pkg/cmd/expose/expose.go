@@ -21,7 +21,7 @@ import (
 	"regexp"
 	"strings"
 
-	internalpolymorphichelpers "github.com/openkruise/kruise-tools/pkg/internal/polymorphichelpers"
+	internalpolymorphichelpers "github.com/dong4325/kruise-tools-test/pkg/internal/polymorphichelpers"
 
 	"github.com/spf13/cobra"
 	"k8s.io/apimachinery/pkg/api/meta"

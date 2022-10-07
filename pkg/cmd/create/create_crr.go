@@ -20,9 +20,9 @@ import (
 	"context"
 	"fmt"
 
+	internalapi "github.com/dong4325/kruise-tools-test/pkg/api"
 	kruiseappsv1alpha1 "github.com/openkruise/kruise-api/apps/v1alpha1"
 	kruiseclientsets "github.com/openkruise/kruise-api/client/clientset/versioned"
-	internalapi "github.com/openkruise/kruise-tools/pkg/api"
 	"github.com/spf13/cobra"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

@@ -19,7 +19,7 @@ package migrate
 import (
 	"fmt"
 
-	"github.com/openkruise/kruise-tools/pkg/api"
+	"github.com/dong4325/kruise-tools-test/pkg/api"
 	"github.com/spf13/cobra"
 
 	"k8s.io/cli-runtime/pkg/genericclioptions"

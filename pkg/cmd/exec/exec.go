@@ -24,8 +24,8 @@ import (
 	"net/url"
 	"time"
 
+	"github.com/dong4325/kruise-tools-test/pkg/cmd/util"
 	dockerterm "github.com/moby/term"
-	"github.com/openkruise/kruise-tools/pkg/cmd/util"
 	"github.com/spf13/cobra"
 	corev1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
@@ -35,7 +35,7 @@ import (
 	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/remotecommand"
 
-	internalpolymorphichelpers "github.com/openkruise/kruise-tools/pkg/internal/polymorphichelpers"
+	internalpolymorphichelpers "github.com/dong4325/kruise-tools-test/pkg/internal/polymorphichelpers"
 	cmdutil "k8s.io/kubectl/pkg/cmd/util"
 	"k8s.io/kubectl/pkg/scheme"
 	"k8s.io/kubectl/pkg/util/i18n"

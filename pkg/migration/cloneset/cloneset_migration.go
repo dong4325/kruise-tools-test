@@ -22,10 +22,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/dong4325/kruise-tools-test/pkg/api"
+	"github.com/dong4325/kruise-tools-test/pkg/migration"
+	"github.com/dong4325/kruise-tools-test/pkg/utils"
 	appsv1alpha1 "github.com/openkruise/kruise-api/apps/v1alpha1"
-	"github.com/openkruise/kruise-tools/pkg/api"
-	"github.com/openkruise/kruise-tools/pkg/migration"
-	"github.com/openkruise/kruise-tools/pkg/utils"
 
 	apps "k8s.io/api/apps/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

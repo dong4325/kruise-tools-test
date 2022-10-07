@@ -25,7 +25,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/openkruise/kruise-tools/cmd/resourcedistributiongenerator/generator"
+	"github.com/dong4325/kruise-tools-test/cmd/resourcedistributiongenerator/generator"
 	"github.com/stretchr/testify/require"
 	"sigs.k8s.io/kustomize/kyaml/yaml"
 )

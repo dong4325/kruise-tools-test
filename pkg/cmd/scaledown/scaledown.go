@@ -19,8 +19,8 @@ package scaledown
 import (
 	"fmt"
 
+	internalapi "github.com/dong4325/kruise-tools-test/pkg/api"
 	kruiseappsv1alpha1 "github.com/openkruise/kruise-api/apps/v1alpha1"
-	internalapi "github.com/openkruise/kruise-tools/pkg/api"
 
 	"github.com/spf13/cobra"
 	"k8s.io/cli-runtime/pkg/genericclioptions"

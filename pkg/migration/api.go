@@ -17,7 +17,7 @@ limitations under the License.
 package migration
 
 import (
-	"github.com/openkruise/kruise-tools/pkg/api"
+	"github.com/dong4325/kruise-tools-test/pkg/api"
 
 	"k8s.io/apimachinery/pkg/types"
 )

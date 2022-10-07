@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"time"
 
-	internalcmdutil "github.com/openkruise/kruise-tools/pkg/cmd/util"
-	"github.com/openkruise/kruise-tools/pkg/creation"
-	clonesetcreation "github.com/openkruise/kruise-tools/pkg/creation/cloneset"
-	"github.com/openkruise/kruise-tools/pkg/migration"
-	clonesetmigration "github.com/openkruise/kruise-tools/pkg/migration/cloneset"
+	internalcmdutil "github.com/dong4325/kruise-tools-test/pkg/cmd/util"
+	"github.com/dong4325/kruise-tools-test/pkg/creation"
+	clonesetcreation "github.com/dong4325/kruise-tools-test/pkg/creation/cloneset"
+	"github.com/dong4325/kruise-tools-test/pkg/migration"
+	clonesetmigration "github.com/dong4325/kruise-tools-test/pkg/migration/cloneset"
 	"github.com/spf13/cobra"
 	cmdutil "k8s.io/kubectl/pkg/cmd/util"
 )

@@ -19,10 +19,10 @@ package rollout
 import (
 	"fmt"
 
+	internalapi "github.com/dong4325/kruise-tools-test/pkg/api"
+	internalpolymorphichelpers "github.com/dong4325/kruise-tools-test/pkg/internal/polymorphichelpers"
 	kruiseappsv1alpha1 "github.com/openkruise/kruise-api/apps/v1alpha1"
 	kruiseappsv1beta1 "github.com/openkruise/kruise-api/apps/v1beta1"
-	internalapi "github.com/openkruise/kruise-tools/pkg/api"
-	internalpolymorphichelpers "github.com/openkruise/kruise-tools/pkg/internal/polymorphichelpers"
 	"github.com/spf13/cobra"
 	"k8s.io/apimachinery/pkg/types"
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"

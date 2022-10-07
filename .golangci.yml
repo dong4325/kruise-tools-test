@@ -23,7 +23,7 @@ linters-settings:
     # simplify code: gofmt with `-s` option, true by default
     simplify: true
   goimports:
-    #local-prefixes: github.com/openkruise/kruise-tools
+    #local-prefixes: github.com/dong4325/kruise-tools-test
 
 issues:
   exclude-use-default: false

@@ -19,7 +19,7 @@ package main
 import (
 	"os"
 
-	"github.com/openkruise/kruise-tools/cmd/resourcedistributiongenerator/generator"
+	"github.com/dong4325/kruise-tools-test/cmd/resourcedistributiongenerator/generator"
 )
 
 func main() {

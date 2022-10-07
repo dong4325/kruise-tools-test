@@ -24,7 +24,7 @@ import (
 	"io"
 	"text/tabwriter"
 
-	internalapps "github.com/openkruise/kruise-tools/pkg/internal/apps"
+	internalapps "github.com/dong4325/kruise-tools-test/pkg/internal/apps"
 
 	kruiseappsv1alpha1 "github.com/openkruise/kruise-api/apps/v1alpha1"
 	kruiseappsv1beta1 "github.com/openkruise/kruise-api/apps/v1beta1"

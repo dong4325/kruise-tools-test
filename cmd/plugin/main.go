@@ -19,7 +19,7 @@ package main
 import (
 	"os"
 
-	"github.com/openkruise/kruise-tools/pkg/cmd"
+	"github.com/dong4325/kruise-tools-test/pkg/cmd"
 	"github.com/spf13/pflag"
 )
 

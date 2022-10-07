@@ -23,10 +23,10 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/dong4325/kruise-tools-test/pkg/api"
+	"github.com/dong4325/kruise-tools-test/pkg/internal/polymorphichelpers"
 	kruiseappsv1alpha1 "github.com/openkruise/kruise-api/apps/v1alpha1"
 	kruiseappsv1beta1 "github.com/openkruise/kruise-api/apps/v1beta1"
-	"github.com/openkruise/kruise-tools/pkg/api"
-	"github.com/openkruise/kruise-tools/pkg/internal/polymorphichelpers"
 	"github.com/spf13/cobra"
 
 	v1 "k8s.io/api/core/v1"

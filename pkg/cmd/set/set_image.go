@@ -19,7 +19,7 @@ package set
 import (
 	"fmt"
 
-	"github.com/openkruise/kruise-tools/pkg/internal/polymorphichelpers"
+	"github.com/dong4325/kruise-tools-test/pkg/internal/polymorphichelpers"
 	"github.com/spf13/cobra"
 	corev1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
