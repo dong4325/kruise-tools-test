@@ -72,7 +72,7 @@ jobs:
           cd _bin/resourcedistribution-generator && \
           ${{ env.DIST_DIRS }} tar -zcf resourcedistribution-generator-{}.tar.gz {} \; && \
           cd .. && \
-          sha256sum resourcedistribution-generato/resourcedistribution-generator-* >> sha256-${{ steps.get_matrix.outputs.OS }}-${{ steps.get_matrix.outputs.ARCH }}.txt \
+          sha256sum resourcedistribution-generator/resourcedistribution-generator-* >> sha256-${{ steps.get_matrix.outputs.OS }}-${{ steps.get_matrix.outputs.ARCH }}.txt \
       - name: Upload resourcedistribution-generator tar.gz
         uses: actions/upload-release-asset@v1.0.2
         with:
