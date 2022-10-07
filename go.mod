@@ -1,4 +1,4 @@
-module github.com/openkruise/kruise-tools
+module github.com/dong4325/kruise-tools-test
 
 go 1.16
 
